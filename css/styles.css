@@ -1,0 +1,153 @@
+/*Colors*/
+:root {
+    --sedans-color: #E28625;
+    --suvs-color: #006971;
+    --luxury-color: #004140;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.cards-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 327px;
+    height: 442px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 48px;
+}
+
+.card:nth-child(1) {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card:nth-last-child(1) {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.svg-container {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+}
+
+p, button {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+p {
+    color: white;
+    opacity: 70%;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0 0 25px;
+}
+
+.card button {
+    width: fit-content;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    min-width: 146px;
+    line-height: 25px;
+    border: 2px solid transparent;
+    background-color: white;
+    cursor: pointer;
+}
+
+.card button:active {
+    color: white;
+    border-color: white;
+    background-color: transparent;
+}
+
+.sedans-card {
+    background-color: var(--sedans-color);
+}
+
+.sedans-card button {
+    color: var(--sedans-color);
+}
+
+.suvs-card {
+    background-color: var(--suvs-color);
+}
+
+.suvs-card button {
+    color: var(--suvs-color);
+}
+
+.luxury-card {
+    background-color: var(--luxury-color);
+}
+
+.luxury-card button {
+    color: var(--luxury-color);
+}
+
+
+/*Small screens*/
+@media (min-width: 640px) {
+
+}
+
+/*Medium screens*/
+@media (min-width: 768px) {
+
+}
+
+/*Large screens*/
+@media (min-width: 1024px) {
+    body {
+        height: 100vh;
+    }
+
+    .cards-container {
+        flex-direction: row;
+    }
+
+    .card:nth-child(1) {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+
+    .card:nth-last-child(1) {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
+
+/*Extra Large screens*/
+@media (min-width: 1280px) {
+
+}
