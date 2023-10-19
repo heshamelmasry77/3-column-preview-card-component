@@ -62,6 +62,3 @@ Hesham El Masry
 ## Feedback and Contributions 🤝
 
 If you have any feedback or suggestions or would like to contribute to this project, please feel free to [open an issue](https://github.com/heshamelmasry77/3-column-preview-card-component/issues) or submit a pull request.
-
-```
-
